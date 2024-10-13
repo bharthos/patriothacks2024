@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlgoPrep</title>
+    <link rel="stylesheet" href="styles1.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/dashicons/3.8.2/css/dashicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Including dashicons library -->
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <!-- Home Icon linked to homepage (index.html) -->
+            <a href="Untitled-1.html" class="nav-button">
+              <i
+                class="_mi dashicons dashicons-admin-home"
+                aria-hidden="true"
+              ></i>
+              Home
+            </a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="nav-button">DSA</a>
+            <ul class="dropdown-content">
+              <li><a href="arrays.html">Arrays</a></li>
+              <li><a href="sorting.html">Sorting</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="nav-button">Web</a>
+            <ul class="dropdown-content">
+              <li><a href="html.html">HTML</a></li>
+              <li><a href="css.html">CSS</a></li>
+              <li><a href="javascript.html">JavaScript</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="start">
+        <a class="nav-button" href="#">Sign in/up</a>
+      </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="Search..."
+          id="search-input"
+          oninput="showSuggestions(this.value)"
+        />
+        <button id="search-button">🔍</button>
+        <ul id="suggestions" class="suggestions-list"></ul>
+        <!-- Suggestion box -->
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtfbcYeYgf0wQJ-LSPm3CPbyB7T1p0f5bnaA&s"
+              alt="Facebook"
+            />
+          </a>
+          <a href="#" aria-label="Twitter">
+            <img
+              src="https://i.etsystatic.com/47286684/r/il/01ded2/5474878123/il_570xN.5474878123_94t0.jpg"
+              alt="Twitter"
+            />
+          </a>
+          <a href="#" aria-label="Instagram">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+              alt="Instagram"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script1.js"></script>
+  </body>
+</html>

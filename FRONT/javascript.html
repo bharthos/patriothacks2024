@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoprep - JavaScript</title>
+    <style>
+        /* Reset margins and paddings for a clean slate */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%; /* Full height for sticky footer */
+            display: flex;
+            flex-direction: column; /* Stack children vertically */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #eef2f3, #ffffff); /* Gradient background */
+            color: #333; /* Dark text for contrast */
+            line-height: 1.6;
+            position: relative; /* For positioning pseudo-element */
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4a90e2, #9013fe); /* Gradient header */
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .content {
+            flex: 1; /* Allow content to grow */
+            margin: 20px;
+            padding: 20px;
+            background: white; /* White background for content */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .topic-list {
+            margin: 20px 0;
+        }
+
+        .topic-list h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #4a90e2; /* Underline effect */
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+        }
+
+        .topic-list .card {
+            background: #f9f9f9; /* Card background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for cards */
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+            width: 200px; /* Fixed width for cards */
+        }
+
+        .topic-list .card:hover {
+            transform: translateY(-5px); /* Raise the card on hover */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+        }
+
+        .topic-list a {
+            text-decoration: none;
+            color: #4a90e2;
+            font-weight: bold;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+
+        .topic-list a:hover {
+            color: #9013fe; /* Change color on hover */
+        }
+
+        .footer {
+            background-color: #4a90e2; /* Footer color */
+            padding: 10px;
+            text-align: center;
+            color: white;
+            width: 100%;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .content {
+                padding: 10px;
+            }
+
+            .topic-list .card {
+                width: 90%; /* Full width on mobile */
+            }
+        }
+
+        /* Background Animation */
+        body::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('background-animation.gif') no-repeat center center fixed; /* Animated background */
+            opacity: 0.1; /* Faded background */
+            z-index: -1; /* Place behind content */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Algoprep - JavaScript</h1>
+    </div>
+    <div class="content">
+        <div class="topic-list">
+            <h2>JavaScript Topics:</h2>
+            <div class="card"><a href="#">Introduction to JavaScript</a></div>
+            <div class="card"><a href="#">JavaScript Functions</a></div>
+            <div class="card"><a href="#">JavaScript Objects</a></div>
+            <div class="card"><a href="#">JavaScript DOM Manipulation</a></div>
+            <div class="card"><a href="#">JavaScript ES6 Features</a></div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Algoprep. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
